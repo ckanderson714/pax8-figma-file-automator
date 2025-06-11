@@ -1,0 +1,9 @@
+   <h2>Project Setup</h2>
+    <button id="create-template">Create Cover Page</button>
+    <script>
+      document.getElementById('create-template').onclick = () => {
+        parent.postMessage({ pluginMessage: { type: 'create-template' } }, '*')
+      }
+    </script>
+
+</script>
